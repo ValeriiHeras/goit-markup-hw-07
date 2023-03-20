@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Webstudio</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
@@ -20,14 +21,14 @@
         <a href="./index.html" class="logo"
           >Web<span class="logo-black">Studio</span>
         </a>
-        <ul>
+        <ul class="navigation-link">
           <li><a href="#" class="header-link">Studio</a></li>
           <li><a href="./portfolio.html" class="header-link">Portfolio</a></li>
           <li><a href="#" class="header-link">Contacts</a></li>
         </ul>
       </nav>
       <address>
-        <ul>
+        <ul class="navigation-link">
           <li>
             <a href="mailto:info@devstudio.com" class="header-contacts"
               >info@devstudio.com</a
@@ -47,11 +48,13 @@
 
       <section class="hero-box">
         <h1>Effective Solutions for Your Business</h1>
-        <button type="button" class="hero-button">Order Service</button>
+        <div class="pointer">
+          <button type="button" class="hero-button">Order Service</button>
+        </div>
       </section>
       <!-- Section1 -->
       <section>
-        <h2 hidden>our benefits</h2>
+        <h2 class="visually-hidden" hidden>Our benefits</h2>
         <ul>
           <li>
             <h3>Strategy</h3>
@@ -114,7 +117,7 @@
         </ul>
       </section>
       <!-- Section3 -->
-      <section>
+      <section class="section-team">
         <h2>Our Team</h2>
         <ul>
           <li>
