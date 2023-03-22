@@ -72,8 +72,18 @@ ul {
 }
 
 /* header */
+
+header{
+    border-bottom: 1px solid var(--accent-secondary);
+}
+
+.page-header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
 .page-header-container{
     display: flex;
+    align-items: center;
 }
 .navigation-list {
     color: var(--title-text-color);
@@ -87,6 +97,16 @@ ul {
     color: var(--title-text-color);
     text-decoration: none;
    padding-right: 40px;
+   display: flex;
+   align-items: center;
+}
+
+.header-link:not(:last-child){
+    margin-right: 40px;
+}
+.menu{
+    display: flex;
+    align-items: center;
 }
 
 .header-nav{
@@ -100,10 +120,13 @@ ul {
 .navigation-list-contact{
     display: flex;
     justify-content: end;
-
 }
 
-.navigation-list :active {
+.mail{ 
+    margin-left: auto;
+}
+
+.header-link:active {
     color: var(--pressed-state);
 }
 
@@ -121,8 +144,6 @@ ul {
     padding-left: 40px;
 }
 
-
-
 .logo-black {
     font-weight: 800;
     font-size: 18px;
@@ -132,7 +153,8 @@ ul {
     text-transform: uppercase;
     text-decoration: none;
     display: flex;
-        justify-content: left;
+    justify-content: left;
+    margin-right: 76px;
 }
 
 .logo {
@@ -145,13 +167,23 @@ ul {
     text-transform: uppercase;
     text-decoration: none;
     display: flex;
-        justify-content: left;
+    justify-content: left;
 }
 
 /* footer */
 
 footer {
     background: var(--title-text-color);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.footer-container{
+   max-width: 264px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+
 }
 
 .footer-paragraph {
@@ -159,6 +191,7 @@ footer {
     font-size: 16px;
     line-height: calc(24 / 16);
     color: var(--light);
+    margin-top: 16px;
 }
 
 .logo-white {
@@ -182,6 +215,9 @@ footer {
     color: var(--accent-primary);
     margin-bottom: 20px;
     max-width: 496px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
 
 
 }
@@ -204,6 +240,8 @@ footer {
     padding: 16px 32px;
     min-width: 168px;
     display: inline-block;
+    margin-top: 48px;
+   
 
 }
 
@@ -215,11 +253,23 @@ footer {
     cursor: pointer;
 }
 
-/* section1 Our benefits */
+/* ====================section1 Our benefits========================== */
 
 .our-benefits {
-    padding: 110px 156px;
+    padding-top: 120px;
+    
 }
+
+.benefits-item{
+    max-width: 264px;
+   
+}
+.benefits-list {
+        display: flex;
+        /* justify-content: space-between; */
+        flex-wrap: wrap;
+        gap: 24px;
+    }
 
 h3 {
     font-weight: 500;
@@ -240,6 +290,8 @@ h3 {
     max-width: 1128px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 8px;
+    text-align: left;
 }
 
 .visually-hidden {
@@ -256,7 +308,7 @@ h3 {
     overflow: hidden;
 }
 
-/* section2 */
+/* =====================section2========================== */
 h2 {
     font-weight: 700;
     font-size: 36px;
@@ -267,20 +319,75 @@ h2 {
     color: var(--title-text-color);
 }
 
-/* section3 */
+.work-exaples-titel{
+    margin-top: 120px;
+    margin-bottom: 72px;
+}
+
+.work-exaples-list{
+    display: flex;
+        /* justify-content: space-between; */
+        flex-wrap: wrap;
+        gap: 24px;
+
+}
+.work-exaples{
+    margin-bottom: 120px;
+}
+
+
+/*======================= section3====================== */
 .section-team {
     background-color: #F4F4FD;
+    padding-top: 120px;
+    padding-bottom: 120px;
 
+}
+
+.team-title{
+    margin-bottom: 72px;
+}
+
+.team-list{
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    gap: 24px;
 }
 
 .position {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px calc(24 / 16);
+    text-align: center;
     color: var(--primary-text-color);
+    margin-top: 8px;
 }
 
-/* filters */
+.name{
+    text-align: center;
+}
+.team-card-wrapper{
+    background: #FFFFFF;
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+        border-radius: 0px 0px 4px 4px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+
+}
+/* .team-card{
+    flex-basis: calc((100%-72px) / 4);
+} */
+/* 
+.team-card:not(:nth-child(4n)){
+    margin-right: 24px;
+}
+
+.team-card:not(:nth-last-child(-n + 4)){
+    margin-bottom: 24px;
+} */
+
+/*========================filters=================================== */
 .filter-type-active {
     font-family: 'Roboto' sans-serif;
     font-weight: 500;
@@ -288,6 +395,10 @@ h2 {
     line-height: calc(24 / 16);
     color: var(--accent-primary);
     background: var(--pressed-state);
+    padding-top: 12px;
+    padding-right: 24px;
+    padding-bottom: 12px;
+    padding-left: 24px;
 }
 
 .filter-type {
@@ -297,17 +408,48 @@ h2 {
     line-height: 24px calc(24 / 16);
     color: var(--pressed-state);
     background: var(--light);
+    padding-top: 12px;
+        padding-right: 24px;
+        padding-bottom: 12px;
+        padding-left: 24px;
 }
 
 .filter-type .filter-type-active:hover {
     background-color: var(--pressed-state);
 }
 
-/* Row1 */
+.filter-button{
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-top: 96px;
+    margin-bottom: 72px;
+}
+/* ==========================Row1====================================== */
 
 .portfolio-description {
     font-weight: 400;
     font-size: 16px;
     line-height: calc(24 / 16);
     color: var(--primary-text-color);
+    margin-top: 8px;
+    padding-bottom: 32px;
+}
+
+.portfolio-examples{
+display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.portfolio-description-wrapper{
+    background: #FFFFFF;
+        border: 1px solid #E7E9FC;
+        border-top:  none;
+        margin-bottom: 48px;
+
+}
+
+.last-row-container{
+    margin-bottom: 120px;
 }
