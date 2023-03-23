@@ -1,4 +1,2 @@
-# goit-markup-hw-03
+# goit-markup-hw-04
 
-1. хедер лінки
-2. hero-box -бекгроун імідж
