@@ -6,6 +6,8 @@
     --primary-brand: #4D5AE5;
     --pressed-state: #404BBF;
     --light: #F4F4FD;
+    --subtle-text: #8E8F99;
+
 }
 
 ul,
@@ -58,6 +60,8 @@ body {
     font-size: 16px;
     line-height: calc(24 / 16);
     color: var(--primary-text-color);
+    margin: 0;
+    padding: 0;
 }
 
 ul {
@@ -185,6 +189,7 @@ header{
     justify-content: left;
 }
 
+
 /* =================================footer============================ */
 
 footer {
@@ -225,7 +230,6 @@ footer {
         flex-direction: column;
         justify-content: center;
        
-
 }
 
 .social-media-title{
@@ -234,7 +238,7 @@ footer {
     font-size: 16px;
     line-height: calc(24 / 16);
     color: var(--accent-primary);}
-÷
+
 
         .social-list-link-footer {
             display: flex;
@@ -242,10 +246,27 @@ footer {
             width: 40px;
             height: 40px;
             border-radius: 50%;
-            background-color: var(--light); 
+            background-color: #434455; 
             align-items: center;
         }
 
+        .social-list-link-footer:hover{
+            background-color: #31D0AA ;
+        }
+
+    .social-list-footer{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        gap: 16px;
+        margin-top: 16px;
+    }
+
+.footer-list {
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 120px;
+}
 /* body */
 /* =======================hero image===========================*/
 .hero-text {
@@ -354,6 +375,13 @@ h3 {
     overflow: hidden;
 }
 
+.benefits-icon{
+    padding: 24px 100px;
+    background-color: var(--light);
+    border-radius: 2px;
+    margin-bottom: 8px;
+}
+
 /* =====================section2========================== */
 .work-exaples-section{
     padding-top: 120px;
@@ -451,9 +479,64 @@ background-color: var(--pressed-state)
     margin-top: 8px; 
 }
 
+/* =====================section4=================================== */
+/* .customer-icon{
+    border: 1px solid var(--subtle-text);
+    border-radius: 4px;
+    width: 168px;
+    height: 88px;
+    padding: 16px 32px;
+    margin-top: 72px;
+} */
+
+.customer-list-link{
+    border: 1px solid var(--subtle-text);
+        border-radius: 4px;
+        width: 168px;
+        height: 88px;
+        padding: 16px 32px;
+        margin-top: 72px;
+        color: var(--subtle-text);
+        display: flex;
+}
+
+.customer-list-icon{
+    fill:currentColor;
+}
+
+.customer-list-link:hover{
+    fill: var(--pressed-state);
+}
+
+.customer-list-icon, .customer-list-link:hover{
+fill: var(--pressed-state);
+}
+
+/* .customer-icon:hover {
+    fill: var(--pressed-state);
+} */
+.company-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+/* .customer-list-link:hover {
+fill: var(--pressed-state);
+}
+
+.customer-icon:hover{
+fill:#404BBF;
+} */
 /*========================filters=================================== */
 .filter-type-active {
-    font-family: 'Roboto' sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: calc(24 / 16);
@@ -465,11 +548,10 @@ background-color: var(--pressed-state)
     padding-left: 24px;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
-
 }
 
 .filter-type {
-    font-family: 'Roboto' sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px calc(24 / 16);
@@ -479,7 +561,7 @@ background-color: var(--pressed-state)
         padding-right: 24px;
         padding-bottom: 12px;
         padding-left: 24px;
-        border: 1px solid #E7E9FC;
+        border: 1px solid var(--accent-secondary);
         border-radius: 4px;
 }
 
