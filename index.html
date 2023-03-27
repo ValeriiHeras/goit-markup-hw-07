@@ -27,13 +27,13 @@
             >Web<span class="logo-black">Studio</span>
           </a>
           <ul class="menu">
-            <li>
-              <a href="./index.html" class="header-link line">Studio</a>
+            <li class="menu-item">
+              <a href="./index.html" class="header-link line-studio-page">Studio</a>
             </li>
-            <li>
-              <a href="./portfolio.html" class="header-link line">Portfolio</a>
+            <li class="menu-item">
+              <a href="./portfolio.html" class="header-link ">Portfolio</a>
             </li>
-            <li>
+            <li class="menu-item">
               <a href="#" class="header-link line">Contacts</a>
             </li>
           </ul>
@@ -63,7 +63,7 @@
         <div class="container">
           <h1 class="hero-text">Effective Solutions for Your Business</h1>
           <div class="pointer">
-            <button type="button" class="hero-button">Order Service</button>
+            <button type="button" class="hero-button" data-modal-open>Order Service</button>
           </div>
         </div>
       </section>
@@ -338,7 +338,8 @@
         <h2>Customers</h2>
         <ul class="company-list">
           <li>
-            <a
+            <div class="customer-list-link-wrapper">  
+              <a
               href=""
               class="customer-list-link"
               aria-label="link for the yako"
@@ -348,6 +349,8 @@
               <svg class="customer-list-icon" width="104" height="56">
                 <use href="./images/icons.svg#icon-yaco"></use></svg
             ></a>
+          </div>
+          
           </li>
           <li>
             <a
@@ -474,5 +477,64 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal> 
+      <div class="modal">
+        <button type="button" class="modal-close-button" data-modal-close>
+          <svg class="modal-close-button-icon">
+            <use href="./images/icons.svg#icon-close-black" width="8px" height="8px" ></use>
+          </svg>
+        </button>
+
+        <b class="modal-titele">Leave your contacts and we will call you back</b>
+
+        <form class="modal-form">
+          <label class="modal-form-field">
+            <span class="modal-form-input-desc">Name</span>
+            <span class="modal-form-input-wrapper">
+              <input type="tel" name="user-phone" class="modal-form-input">
+              <svg class="modal-form-input-icon" width="18px" height="24px" >
+                <use href="./images/icons.svg#icon-user" ></use>
+              </svg>
+            </span>
+          </label>
+
+          <label class="modal-form-field">
+            <span class="modal-form-input-desc">Phone</span>
+            <span class="modal-form-input-wrapper">
+              <input type="tel" name="user-phone" class="modal-form-input">
+              <svg class="modal-form-input-icon" width="18px" height="24px">
+                <use href="./images/icons.svg#icon-phone"  ></use>
+              </svg>
+            </span>
+          </label>
+
+          <label class="modal-form-field">
+            <span class="modal-form-input-desc">Email</span>
+            <span class="modal-form-input-wrapper">
+              <input type="tel" name="user-phone" class="modal-form-input">
+              <svg class="modal-form-input-icon" width="18px" height="24px">
+                <use href="./images/icons.svg#icon-email"  ></use>
+              </svg>
+            </span>
+          </label>
+           <label class="modal-form-field">
+            <span class="modal-form-input-desc">Comment</span>
+            <textarea name="user-comment"  placeholder="Text input" class="modal-form-comment" ></textarea>
+          </label>
+          <div class="checkbox-wrapper">
+          <input id="user-policy" type="checkbox" name="user-policy" class="modal-form-check visually-hidden">
+          <label for="user-policy" class="modal-form-check-desc">
+             <span class="modal-form-fake-checkbox">
+            <svg class="check-icon">
+              <use href="./images/icons.svg#icon-check"></use>
+            </svg>
+          </span> <span class="conditions">I accept the terms and conditions of the</span>  </label>
+          </div>
+          <a href="" class="policy">Privacy Policy</a>
+          <button type="submit" class="modal-form-submit">Send</button>
+        </form>
+      </div>
+    </div>
+     <script src="./js/modal.js"></script>
   </body>
 </html>
