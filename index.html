@@ -16,6 +16,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/vars.css">
+    <link rel="stylesheet" href="./css/components.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/tablet.css">
+    <link rel="stylesheet" href="./css/desktop.css">
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -63,7 +69,7 @@
 
       <section class="hero-box">
         <div class="container">
-          <h1 class="hero-text">Effective Solutions for Your Business</h1>
+          <h1 class="hero-text">Effective Solutions For Your Business</h1>
           <div class="pointer">
             <button type="button" class="hero-button" data-modal-open>
               Order Service
@@ -333,13 +339,13 @@
           </ul>
         </div>
       </section>
-    </main>
+  
     <!-- ========================section4============================== -->
     <section class="customers">
       <div>
         <h2>Customers</h2>
         <ul class="company-list">
-          <li>
+          <li class="company-list-item">
             <div class="customer-list-link-wrapper">
               <a
                 href=""
@@ -353,7 +359,7 @@
               ></a>
             </div>
           </li>
-          <li>
+          <li class="company-list-item">
             <a
               href=""
               class="customer-list-link"
@@ -364,8 +370,8 @@
               <svg class="customer-list-icon" width="104" height="56">
                 <use href="./images/icons.svg#icon-tagline"></use></svg
             ></a>
-          </li>
-          <li>
+          </li >
+          <li class="company-list-item">
             <a
               href=""
               class="customer-list-link"
@@ -377,7 +383,7 @@
                 <use href="./images/icons.svg#icon-company"></use></svg
             ></a>
           </li>
-          <li>
+          <li class="company-list-item">
             <a
               href=""
               class="customer-list-link"
@@ -388,7 +394,7 @@
                 <use href="./images/icons.svg#icon-foster"></use></svg
             ></a>
           </li>
-          <li>
+          <li class="company-list-item">
             <a
               href=""
               class="customer-list-link"
@@ -399,7 +405,7 @@
                 <use href="./images/icons.svg#icon-brad"></use></svg
             ></a>
           </li>
-          <li>
+          <li class="company-list-item">
             <a
               href=""
               class="customer-list-link"
@@ -415,7 +421,9 @@
       </div>
     </section>
 
-    <!-- Footer -->
+  </main>
+
+    <!--====================== Footer========================= -->
     <footer>
       <div class="container">
         <ul class="footer-list">
@@ -522,7 +530,7 @@
       </div>
     </footer>
     <!-- ===============================modal=================================== -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-button" data-modal-close>
           <svg class="modal-close-button-icon">
@@ -600,6 +608,6 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <script src="./js/modal.js"></script> -->
   </body>
 </html>
