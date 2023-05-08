@@ -8,155 +8,6 @@ header {
 }
 
 /* -------------HEADER---------------------*/
-.page-header {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  display: none;
-}
-.page-header-container {
-  display: none;
-  align-items: center;
-}
-
-.navigation-list {
-  color: var(--title-text-color);
-}
-
-.header-link:not(:last-child) {
-  margin-right: 40px;
-}
-
-.menu-item {
-  position: relative;
-}
-
-.header-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: calc(24 / 16);
-  color: var(--title-text-color);
-  text-decoration: none;
-  padding-right: 40px;
-}
-
-/* .line::after{
-    position: absolute;
-    left: 0;
-    width: 0;
-    content: '';
-    width: 58px;
-    height: 4px;
-    top: 44px;
-    background-color: var(--pressed-state);
-    border-radius: 2px;
-  
-} */
-
-.line-studio-page {
-  color: var(--pressed-state);
-}
-
-.line-page {
-  color: var(--pressed-state);
-}
-
-.line-studio-page::after {
-  position: absolute;
-  left: 0;
-  width: 0;
-  content: "";
-  width: 48px;
-  height: 4px;
-  top: 44px;
-  background-color: var(--pressed-state);
-  color: var(--pressed-state);
-  border-radius: 2px;
-}
-
-.line-portfolio-page::after {
-  position: absolute;
-  left: 0;
-  width: 0;
-  content: "";
-  width: 66px;
-  height: 4px;
-  top: 44px;
-  background-color: var(--pressed-state);
-  border-radius: 2px;
-}
-
-.menu {
-  display: none;
-  align-items: center;
-}
-
-.header-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-}
-
-.navigation-list-contact {
-  display: flex;
-  justify-content: end;
-  margin-left: auto;
-}
-
-.address {
-  margin-left: auto;
-}
-
-.mail {
-  margin-left: auto;
-}
-
-.header-link:active {
-  color: var(--pressed-state);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-contacts:active {
-  color: var(--pressed-state);
-
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-link:focus {
-  color: var(--pressed-state);
-
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-contacts:focus {
-  color: var(--pressed-state);
-
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-link:hover {
-  color: var(--pressed-state);
-
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-contacts:hover {
-  color: var(--pressed-state);
-
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-contacts {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: calc(24 / 16);
-  color: var(--primary-text-color);
-  text-decoration: none;
-  font-style: normal;
-  padding-left: 40px;
-}
 
 .logo-black {
   font-weight: 800;
@@ -182,6 +33,22 @@ header {
   display: flex;
   justify-content: left;
 }
+
+.page-header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+ .header-link{
+    display: none;
+ }
+
+ .header-contacts{
+    display: none;
+ }
+
+ /* .burger-icon{
+    color: 2E2F42;
+ } */
 
 /* =======================hero image===========================*/
 .hero-text {
@@ -346,8 +213,6 @@ h2 {
 
 .team-list {
   display: flex;
-  --gap: 0;
-  --elements: 1;
   justify-content: center;
   align-items: center;
   column-gap: 72px;
@@ -358,7 +223,7 @@ h2 {
 .team-card {
   margin: 0 auto;
   padding-bottom: 32px;
-  width: calc((100% - (var(--elements) - 1) * var(--gap)) / (var(--elements)));
+
 }
 
 .position {
@@ -469,24 +334,33 @@ footer {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 80px;
+    gap: 72px;
 }
 .footer-container {
     max-width: 264px;
     display: flex;
     flex-direction: column;
     place-items: center;
-    justify-content: left;
-
+    /* justify-content: left; */
 }
 
 .footer-paragraph {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: 400;
     font-size: 16px;
     line-height: calc(24 / 16);
     color: var(--light);
     margin-top: 16px;
     text-align: center;
+    width: 268px;
+    place-items: center;
+}
+.footer-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo-white {
@@ -497,6 +371,7 @@ footer {
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
     text-decoration: none;
+    text-align: center;
 }
 
 .footer-container-social-media {
@@ -517,8 +392,8 @@ footer {
     font-size: 16px;
     line-height: calc(24 / 16);
     color: var(--accent-primary);
+    text-align: center;
 }
-
 
 .social-list-link-footer {
     display: flex;
@@ -542,8 +417,6 @@ footer {
     gap: 16px;
     margin-top: 16px;
 }
-
-
 
 .subscribe-title {
     font-family: 'Roboto', sans-serif;
